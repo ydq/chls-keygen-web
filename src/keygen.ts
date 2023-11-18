@@ -117,7 +117,7 @@ class Helper {
         let _a: string[] = a.split('')
         let _b: string[] = b.split('')
         while (_a.length || _b.length || c) {
-            c += parseInt(_a.pop() ?? '0' as string) + parseInt(_b.pop() ?? '0' as string);
+            c += parseInt(_a.pop() ?? '0') + parseInt(_b.pop() ?? '0');
             res = c % 2 + res;
             c = c > 1 ? 1 : 0
         }
